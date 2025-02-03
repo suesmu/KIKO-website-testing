@@ -1,0 +1,351 @@
+{
+  "id": "8f6ca4a3-ca09-463c-a8aa-cd5d75d04440",
+  "version": "2.0",
+  "name": "test-project",
+  "url": "https://www.kikomilano.com.tr",
+  "tests": [{
+    "id": "7676b46f-1951-4d2e-be8a-e7282c32319a",
+    "name": "searchingNotExistingProduct",
+    "commands": [{
+      "id": "ae025623-d8a3-4d6e-870c-c48cdf510816",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2339a0a-cccd-4e00-bc20-c6ce55e1a20f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1069x816",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "89ac9e9f-a74d-461f-a2f9-71134197d0c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=pz-form-input-AutocompleteInput",
+      "targets": [
+        ["id=pz-form-input-AutocompleteInput", "id"],
+        ["css=span #pz-form-input-AutocompleteInput", "css:finder"],
+        ["xpath=//input[@id='pz-form-input-AutocompleteInput']", "xpath:attributes"],
+        ["xpath=//pz-input[@id='AutocompleteInput']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc0efbd5-02dd-47b3-96b9-3e6b41d19c74",
+      "comment": "",
+      "command": "type",
+      "target": "id=pz-form-input-AutocompleteInput",
+      "targets": [
+        ["id=pz-form-input-AutocompleteInput", "id"],
+        ["css=span #pz-form-input-AutocompleteInput", "css:finder"],
+        ["xpath=//input[@id='pz-form-input-AutocompleteInput']", "xpath:attributes"],
+        ["xpath=//pz-input[@id='AutocompleteInput']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "52f097c7-498a-48d7-8945-cf2ac8d0bfd5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pz-form-input-AutocompleteInput",
+      "targets": [
+        ["id=pz-form-input-AutocompleteInput", "id"],
+        ["css=span #pz-form-input-AutocompleteInput", "css:finder"],
+        ["xpath=//input[@id='pz-form-input-AutocompleteInput']", "xpath:attributes"],
+        ["xpath=//pz-input[@id='AutocompleteInput']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1eecd4ff-b9d9-40b2-b809-c74039f34c30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.-empty",
+      "targets": [
+        ["css=.-empty", "css:finder"],
+        ["xpath=//div[5]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f968e59-5e13-4621-af0c-3a4ba17564e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.list__products-empty-content",
+      "targets": [],
+      "value": "Sonuç bulunamadı.\\nAna Sayfa"
+    }]
+  }, {
+    "id": "c43c3188-0e6d-4341-8565-50d9df202f0f",
+    "name": "emptyingShoppingCart",
+    "commands": [{
+      "id": "1849a37c-3bb9-4f0a-950b-14cee4f3fc66",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e44bcee2-699a-4a23-b842-8ca5efc2e85e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1070x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3b60c6c-7404-4359-96a2-07e8be7464be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-mini-basket-show-btn > svg",
+      "targets": [
+        ["css=.js-mini-basket-show-btn > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0bcb121-4ef0-472d-acaf-925856a81cfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pz-icon-minus",
+      "targets": [
+        ["css=.pz-icon-minus", "css:finder"],
+        ["xpath=//div/pz-button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da62e597-ac04-4510-bef8-e8d602e0e311",
+      "comment": "",
+      "command": "click",
+      "target": "css=.empty-basket__title",
+      "targets": [
+        ["css=.empty-basket__title", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Alışveriş Sepetiniz Boş!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33969d33-e806-4b33-b1b6-90ec9b334c7e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.empty-basket__title",
+      "targets": [],
+      "value": "Alışveriş Sepetiniz Boş!"
+    }]
+  }, {
+    "id": "01b8f442-9b16-4704-b152-dccb10d1be9d",
+    "name": "editingNumberofProductswithString",
+    "commands": [{
+      "id": "2f27ec3f-5d3e-405f-9459-1c573a5a1cae",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec1afd7e-d484-487d-b817-76fd5e90dd0f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1073x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb6b4168-1a12-4154-9125-e92f44a62129",
+      "comment": "",
+      "command": "click",
+      "target": "id=Path_7",
+      "targets": [
+        ["id=Path_7", "id"],
+        ["css=#Path_7", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b20ed52-6fcb-4bba-8f1a-44aa166e25a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.basket-item__quantity-input",
+      "targets": [
+        ["css=.basket-item__quantity-input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2735d216-6c25-4d49-ab99-89f0a9ddcf86",
+      "comment": "",
+      "command": "type",
+      "target": "css=.basket-item__quantity-input",
+      "targets": [
+        ["css=.basket-item__quantity-input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "abc"
+    }, {
+      "id": "3d7f28c6-25f1-4c55-b188-aa1223b33c84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pz-icon-check",
+      "targets": [
+        ["css=.pz-icon-check", "css:finder"],
+        ["xpath=//div[3]/div/div/pz-button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0962e8f-5bcd-4065-ba51-80428ca65c1b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.pz-button__icon.pz-icon-check",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2560d5d9-de39-4e56-a8fb-b6cba78250ce",
+    "name": "discountCode",
+    "commands": [{
+      "id": "e27f07f0-e418-47b6-b37c-876704fe4277",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f99e6a60-9bcb-4f44-a106-537615f038c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1069x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4294e7a-cb9a-4dbf-b75e-b9a8fd124c89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-mini-basket-show-btn > svg",
+      "targets": [
+        ["css=.js-mini-basket-show-btn > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "aade5419-a62b-45a3-9bb6-e9472dbab4a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.voucher-banner",
+      "targets": [
+        ["css=.voucher-banner", "css:finder"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7f503f2-8e75-43a8-b3bb-f7aaba224651",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//pz-form/form/div/pz-input/input",
+      "targets": [
+        ["id=pz-form-input-e7ee", "id"],
+        ["css=#pz-form-input-e7ee", "css:finder"],
+        ["xpath=//input[@id='pz-form-input-e7ee']", "xpath:attributes"],
+        ["xpath=//pz-form/form/div/pz-input/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a940eb6d-8a06-4544-8726-af23385f992b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[6]/div[6]/section[3]/div[2]/div[2]/div[2]/pz-form/form/div[1]/pz-input/input",
+      "targets": [
+        ["id=pz-form-input-b4e1", "id"],
+        ["css=#pz-form-input-b4e1", "css:finder"],
+        ["xpath=//input[@id='pz-form-input-b4e1']", "xpath:attributes"],
+        ["xpath=//pz-form/form/div/pz-input/input", "xpath:position"]
+      ],
+      "value": "invalidcode"
+    }, {
+      "id": "8faec542-9063-4a00-84a2-3c102010e20f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-basket-voucher-form-submit > .pz-button__text",
+      "targets": [
+        ["css=.js-basket-voucher-form-submit > .pz-button__text", "css:finder"],
+        ["xpath=//form/div[2]/pz-button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4baac04d-d166-4e1e-b03a-16e8ee45eb45",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.basket-voucher__error.js-basket-voucher-form-error",
+      "targets": [
+        ["css=.basket-voucher__error", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Kupon kodu geçerli değildir."
+    }]
+  }, {
+    "id": "41b40788-5ceb-4474-b943-4fbdd45971c3",
+    "name": "commentLikeButton",
+    "commands": [{
+      "id": "eb947814-43bc-4954-b4ca-51d9863567f3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ad79a0c-c429-4b20-9b46-235a3bed7442",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1070x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03125013-6ee7-4ced-aca4-5b3c0d1c1df6",
+      "comment": "",
+      "command": "click",
+      "target": "id=Path_5",
+      "targets": [
+        ["id=Path_5", "id"],
+        ["css=#Path_5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "989ab4dc-3e7e-4ebf-9eba-8b24dee70ef8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.basket-item__image",
+      "targets": [
+        ["css=.basket-item__image", "css:finder"],
+        ["xpath=//img[@alt='Smart Radiance Cream']", "xpath:img"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b3d7ca2-b512-40d2-90a0-f4086a57a41f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-thumbs-o-up",
+      "targets": [
+        ["css=.fa-thumbs-o-up", "css:finder"],
+        ["xpath=//div[@id='commentAndReviews']/div[2]/div[2]/div/div[3]/div[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "623caad7-0892-47bc-897c-64153738f0d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.qty1",
+      "targets": [],
+      "value": "5"
+    }]
+  }],
+  "suites": [{
+    "id": "9508d963-b749-4713-9317-aad15095db28",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.kikomilano.com.tr/"],
+  "plugins": []
+}
